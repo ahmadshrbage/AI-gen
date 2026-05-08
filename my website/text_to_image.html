@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نماذج الصور</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+</head>
+<body class="sub-page">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.webp" alt="AI Logo"> <span>AI Generative</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#models-section">الأقسام</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <h1 class="text-center highlight mb-5">تقنيات توليد ومعالجة الصور بالذكاء الاصطناعي التوليدي</h1>
+
+        <section class="generation-section mb-5">
+            <h2 class="section-subtitle"><i class="bi bi-chat-left-text"></i> 1. تحويل النص إلى صورة (Text-to-Image)</h2>
+            <p class="section-desc">تتيح هذه التقنية للمستخدمين توليد صور واقعية أو فنية من خلال تقديم وصف نصي بسيط. يقوم النموذج بتحويل الكلمات إلى مفاهيم بصرية، ثم يقوم بإنشاء صورة تتوافق مع هذا الوصف.</p>
+            
+            <div class="content-details">
+                <h3>آلية العمل:</h3>
+                <p>تعتمد نماذج Text-to-Image على بنية معقدة تتضمن عادةً مكونين رئيسيين: مشفر نصي (Text Encoder) ومولد صور (Image Generator). يقوم المشفر النصي بتحويل الوصف النصي إلى تمثيل رقمي (vector) يفهمه النموذج. بعد ذلك، يستخدم مولد الصور هذا التمثيل لإنشاء الصورة خطوة بخطوة، غالبًا باستخدام تقنيات الانتشار (Diffusion Models) التي تبدأ بضوضاء عشوائية وتزيلها تدريجيًا لتشكيل الصورة النهائية.</p>
+                
+                <h3>الأدوات والنماذج الشائعة:</h3>
+                <ul>
+                    <li><strong>DALL-E (OpenAI):</strong> من أوائل النماذج التي أظهرت قدرات مذهلة في توليد الصور من النصوص.</li>
+                    <li><strong>Stable Diffusion:</strong> نموذج مفتوح المصدر وشائع يتيح توليد صور عالية الجودة بكفاءة.</li>
+                    <li><strong>Midjourney:</strong> أداة قوية تركز على الجانب الفني والإبداعي في توليد الصور.</li>
+                </ul>
+
+            </div>
+
+            <div class="gallery-wrapper">
+                <div class="example-item">
+                    <div class="image-container"><img src="ai-image-1.webp" alt="Text to Image Sample"></div>
+                    <div class="prompt-box">
+                        <strong>الأمر (Prompt):</strong> 
+                        <p>"A futuristic robot hand holding a digital paintbrush, creating a colorful galaxy on a floating glass canvas, cinematic lighting, hyper-realistic "</p>
+                        <p>الترجمة : يد روبوتية مستقبلية تحمل فرشاة رسم رقمية، ترسم مجرة ​​ملونة على لوحة زجاجية عائمة، بإضاءة سينمائية، وواقعية فائقة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="generation-section mb-5">
+            <h2 class="section-subtitle"><i class="bi bi-pencil-fill"></i> 2. نماذج مطورة من رسوم أولية (Sketch-to-Image) أو تعديل صورة من خلال نص (Image-to-Image)</h2>
+            <p class="section-desc">تسمح هذه التقنيات للمستخدمين بتعديل أو تحسين الصور الموجودة باستخدام رسومات بسيطة (Sketches) أو أوامر نصية.</p>
+            
+            <div class="content-details">
+                <h3>آلية العمل:</h3>
+                <p>في Sketch-to-Image، يتم تزويد النموذج برسم تخطيطي بسيط (أو صورة أولية) ووصف نصي. يقوم النموذج بتحويل هذا الرسم إلى صورة واقعية أو فنية مع الحفاظ على الهيكل الأساسي للرسم. أما Image-to-Image، فيقوم بتعديل صورة موجودة بناءً على وصف نصي أو صورة مرجعية أخرى، مما يتيح تغيير الأسلوب، إضافة عناصر، أو تحويل الصورة بالكامل. تعتمد هذه التقنيات غالبًا على نماذج الانتشار الشرطية (Conditional Diffusion Models) التي توجه عملية التوليد بناءً على المدخلات البصرية والنصية.</p>
+                
+                <h3>الأدوات والنماذج الشائعة:</h3>
+                <ul>
+                    <li><strong>ControlNet:</strong> إضافة قوية لنماذج الانتشار تسمح بالتحكم الدقيق في توليد الصور من خلال مدخلات مثل الرسوم التخطيطية، خرائط العمق، أو وضعيات الجسم.</li>
+                    <li><strong>Img2img (في Stable Diffusion):</strong> وظيفة تسمح بتعديل الصور الموجودة باستخدام أوامر نصية.</li>
+                </ul>
+            </div>
+
+            <div class="gallery-wrapper dual-view">
+                <div class="example-item">
+                    <div class="image-container"><img src="image2.webp" alt="Sketch"></div>
+                    <p class="label-text">الرسم الأولي (Sketch)</p>
+                </div>
+                <div class="example-item">
+                    <div class="image-container"><img src="image3.webp" alt="Result"></div>
+                    <p class="label-text">النتيجة النهائية</p>
+                </div>
+            </div>
+            <div class="gallery-wrapper">
+                <div class="example-item">
+                    <div class="image-container"><img src="image4.webp" alt="Image to Image Original"></div>
+                    <div class="prompt-box">
+                        <strong>الصورة الأصلية</strong>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="image-container"><img src="image5.webp" alt="Image to Image Modified"></div>
+                    <div class="prompt-box">
+                        <strong>التعديل المجري:</strong> 
+                        <p>Increase the resolution. Replace the existing planet with Earth and place a spacecraft</p>
+                        <p>الترجمة :قم بزيادة الدقة. استبدل الكوكب الحالي بالأرض وضع مركبة فضائية.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+    <footer>
+        <p>مشروع مقرر نظم الوسائط المتعددة - فريق عمل الطالب</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

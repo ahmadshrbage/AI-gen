@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مختبر الفيديو التوليدي </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body class="sub-page">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.webp" alt="AI Logo"> <span>AI Generative Lab</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#models-section">الأقسام</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="highlight display-4 mb-3">مختبر الفيديو بالذكاء الاصطناعي</h1>
+            <p class="lead" style="color: var(--text-gray); max-width: 900px; margin: 0 auto;">
+                استكشاف آفاق الإنتاج المرئي التوليدي، حيث تلتقي الخوارزميات المتقدمة بالفن الرقمي لإنشاء تجارب بصرية فريدة من الأوصاف النصية أو تحريك الصور الثابتة.
+            </p>
+        </div>
+
+        <section class="generation-section mb-5">
+            <h2 class="section-subtitle"><i class="bi bi-magic"></i> 1. تحويل النص إلى فيديو (Text-to-Video)</h2>
+            
+            <div class="content-details">
+                <p>تعتمد هذه التقنية على نماذج الانتشار (Diffusion Models) التي تتعلم الربط بين المفاهيم اللغوية والأنماط البصرية لإنتاج مشاهد ديناميكية متكاملة.</p>
+                
+                <h3>الأدوات الشائعة:</h3>
+                <ul class="feature-list">
+                    <li><i class="bi bi-check2-circle"></i> <strong>Runway Gen-3:</strong> الرائدة في هذا المجال.</li>
+                    <li><i class="bi bi-check2-circle"></i> <strong>HeyGen:</strong> لتوليد الشخصيات الافتراضية المتحدثة.</li>
+                    <li><i class="bi bi-check2-circle"></i> <strong>Luma Dream Machine:</strong> لواقعية الحركة.</li>
+                </ul>
+            </div>
+
+            <div class="video-card">
+                <span class="tool-tag">تم التوليد بواسطة: HeyGen</span>
+                <h4 class="mb-3 text-white">فيديو شرح عمل الموقع (Presentation)</h4>
+                
+                <video controls>
+                    <source src="site_explanation.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                
+                <div class="audio-description">
+                    <strong>وصف المهمة:</strong> فيديو تقديمي يشرح أهداف الموقع، تم إنتاجه عبر شخصية رقمية (Avatar) تصف أقسام المختبر والذكاء التوليدي المستخدم في الصوت والصور.
+                </div>
+            </div>
+        </section>
+
+        <section class="generation-section mb-5">
+            <h2 class="section-subtitle"><i class="bi bi-images"></i> 2. تحويل الصورة إلى فيديو (Image-to-Video)</h2>
+            
+            <div class="content-details">
+                <p>تعتمد هذه التقنية على أخذ صورة ثابتة واستخدام خوارزميات التعلم العميق لتخيّل حركة العناصر داخلها مع الحفاظ على الهوية البصرية للصورة الأصلية.</p>
+                
+                <h3>الأدوات المستخدمة:</h3>
+                <ul class="feature-list">
+                    <li><i class="bi bi-check2-circle"></i> <strong>Kling AI:</strong> النموذج المستخدم لتحريك هذا المشهد.</li>
+                    <li><i class="bi bi-check2-circle"></i> <strong>Runway Gen-2:</strong> للتحكم في حركة الكاميرا.</li>
+                    <li><i class="bi bi-check2-circle"></i> <strong>Luma Labs:</strong> لإنتاج حركات فيزيائية واقعية.</li>
+                </ul>
+            </div>
+
+            <div class="video-card" style="border-right-color: #ffaa00;">
+                <span class="tool-tag" style="color: #ffaa00; border-color: #ffaa00; background: rgba(255, 170, 0, 0.1);">التقنية: Image-to-Video</span>
+                <h4 class="mb-3 text-white">تحريك صورة (النيزك والكوكب)</h4>
+                
+                <video controls>
+                    <source src="v2v_demo.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                
+                <div class="audio-description">
+                    <strong>وصف المهمة:</strong> في هذه التجربة، قمنا باستخدام الصورة التي تم توليدها سابقاً في <strong>(مختبر الصور)</strong>، ورفعها لمنصة Kling AI مع تزويدها بوصف حركي (Prompt) لإنتاج مشهد اصطدام النيزك بالكوكب وتوليد الانفجار والحطام المتطاير بشكل فيزيائي دقيق.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>مشروع مقرر نظم الوسائط المتعددة - قسم هندسة تقنية المعلومات (ITE)</p>
+            <p style="font-size: 0.8rem; color: var(--text-gray);">متخصص في تطبيقات الأمن السيبراني والذكاء الاصطناعي</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
